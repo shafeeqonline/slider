@@ -2,6 +2,7 @@
 
 import 'rc-slider/assets/index.less';
 import 'rc-tooltip/assets/bootstrap.css';
+import './handle.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Tooltip from 'rc-tooltip';
@@ -17,7 +18,7 @@ const handle = (props) => {
     <Tooltip
       prefixCls="rc-slider-tooltip"
       overlay={value}
-      visible={dragging}
+      visible={true}
       placement="top"
       key={index}
     >
@@ -26,12 +27,21 @@ const handle = (props) => {
   );
 };
 
+let initialToolTipStyles = {
+  display: "none"
+}
+const initialTrackStyle = {
+  backgroundColor: "red"
+}
+const onChange = () => {
+  initialToolTipStyles.display = "inline";
+}
 const wrapperStyle = { width: 400, margin: 50 };
 ReactDOM.render(
   <div>
     <div style={wrapperStyle}>
       <p>Slider with custom handle</p>
-      <Slider min={0} max={20} defaultValue={3} handle={handle} />
+      <Slider min={0} max={20} defaultValue={3} initialTrackStyle={initialTrackStyle} initialValue={3} onChange={onChange} handle={handle} initialToolTipStyles={initialToolTipStyles} />
     </div>
     <div style={wrapperStyle}>
       <p>Range with custom handle</p>

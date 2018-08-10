@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, {Fragment} from 'react';
 import PropTypes from 'prop-types';
 import warning from 'warning';
 import Track from './common/Track';
@@ -148,11 +148,15 @@ class Slider extends React.Component {
       handleStyle,
       tabIndex,
       min,
+      initialToolTipStyles = {},
+      initialTrackStyle = {},
       max,
+      initialValue,
       handle: handleGenerator,
     } = this.props;
     const { value, dragging } = this.state;
     const offset = this.calcOffset(value);
+    const initialOffset = initialValue && this.calcOffset(initialValue);
     const handle = handleGenerator({
       className: `${prefixCls}-handle`,
       prefixCls,
@@ -171,17 +175,34 @@ class Slider extends React.Component {
 
     const _trackStyle = trackStyle[0] || trackStyle;
     const track = (
-      <Track
-        className={`${prefixCls}-track`}
-        vertical={vertical}
-        included={included}
-        offset={0}
-        length={offset}
-        style={{
-          ...minimumTrackStyle,
-          ..._trackStyle,
-        }}
-      />
+      <Fragment>
+        <Track
+          className={`${prefixCls}-track`}
+          vertical={vertical}
+          included={included}
+          offset={0}
+          length={offset}
+          style={{
+            ...minimumTrackStyle,
+            ..._trackStyle,
+          }}
+        />
+        {initialOffset && 
+        <Fragment>
+        <span className="initial-value-toolTip" style={{...initialToolTipStyles, left: `${initialOffset}%` }}>{initialValue}</span>
+        <Track
+          className={`${prefixCls}-track`}
+          vertical={vertical}
+          included={included}
+          offset={0}
+          length={initialOffset}
+          style={{
+            ...minimumTrackStyle,
+            ..._trackStyle,
+            ...initialTrackStyle
+          }}
+        /></Fragment>}
+      </Fragment>
     );
 
     return { tracks: track, handles: handle };
