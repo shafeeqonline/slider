@@ -185,11 +185,13 @@ class Slider extends React.Component {
           style={{
             ...minimumTrackStyle,
             ..._trackStyle,
+            ...((value < initialValue) ? initialTrackStyle : {}),
+            zIndex: 2
           }}
         />
         {initialOffset && 
         <Fragment>
-        <span className="initial-value-toolTip" style={{...initialToolTipStyles, left: `${initialOffset}%` }}>{initialValue}</span>
+        <span className="initial-value-toolTip" style={{...initialToolTipStyles, display: value !== initialValue ? "inline" : "none" ,right: `${100 - initialOffset}%` }}>{initialValue}</span>
         <Track
           className={`${prefixCls}-track`}
           vertical={vertical}
@@ -197,9 +199,10 @@ class Slider extends React.Component {
           offset={0}
           length={initialOffset}
           style={{
+            zIndex: 2,
             ...minimumTrackStyle,
             ..._trackStyle,
-            ...initialTrackStyle
+            ...((value >= initialValue) ? initialTrackStyle : {zIndex: 1})
           }}
         /></Fragment>}
       </Fragment>

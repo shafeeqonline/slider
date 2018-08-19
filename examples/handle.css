@@ -1,4 +1,13 @@
 .initial-value-toolTip{
     position: absolute;
-    top: 20px;
+    top: 10px;
+    padding-right: 5px;
+}
+
+span.initial-value-toolTip:after{
+    border-right: 1px solid #aeaeae;
+    content: "";
+    position: relative;
+    top: -2px;
+    left: 5px;
 }

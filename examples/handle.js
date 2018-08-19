@@ -27,21 +27,19 @@ const handle = (props) => {
   );
 };
 
-let initialToolTipStyles = {
-  display: "none"
-}
 const initialTrackStyle = {
   backgroundColor: "red"
 }
-const onChange = () => {
-  initialToolTipStyles.display = "inline";
+
+const initialToolTipStyles = {
+  //initialToolTipStyles styles can be passed in
 }
 const wrapperStyle = { width: 400, margin: 50 };
 ReactDOM.render(
   <div>
     <div style={wrapperStyle}>
       <p>Slider with custom handle</p>
-      <Slider min={0} max={20} defaultValue={3} initialTrackStyle={initialTrackStyle} initialValue={3} onChange={onChange} handle={handle} initialToolTipStyles={initialToolTipStyles} />
+      <Slider min={0} max={20} defaultValue={3} initialTrackStyle={initialTrackStyle} initialValue={3} handle={handle} initialToolTipStyles={initialToolTipStyles} />
     </div>
     <div style={wrapperStyle}>
       <p>Range with custom handle</p>
