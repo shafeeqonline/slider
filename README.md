@@ -41,7 +41,7 @@ Slider UI component for React
 ## Install
 
 ```bash
-npm install --save rc-slider
+npm install --save rc-slider-enhanced
 ```
 
 [![rc-slider](https://nodei.co/npm/rc-slider.png)](https://npmjs.org/package/rc-slider)
@@ -55,7 +55,7 @@ import Slider, { Range } from 'rc-slider-enhanced';
 // We can just import Slider or Range to reduce bundle size
 // import Slider from 'rc-slider/lib/Slider';
 // import Range from 'rc-slider/lib/Range';
-import 'rc-slider/assets/index.css';
+import 'rc-slider-enhanced/assets/index.css';
 
 ReactDOM.render(
   <div>
@@ -121,6 +121,9 @@ The following APIs are shared by Slider and Range.
 | defaultValue | number | `0` | Set initial value of slider. |
 | value | number | - | Set current value of slider. |
 | tabIndex | number | `0` | Set the tabIndex of the slider handle. |
+| initialTrackStyle | Object | | Trackstyles for the initial values slider that stays still |
+| initialValue | Number | | Initial value that stays put throught |
+| initialToolTipStyles | Object | | the styles for the initial value tooltip |
 
 ### Range
 
@@ -156,4 +159,4 @@ Online examples: [http://react-component.github.io/slider/](http://react-compone
 
 ## License
 
-`rc-slider` is released under the MIT license.
+`rc-slider-enhanced` is released under the MIT license.
