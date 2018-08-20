@@ -16,7 +16,7 @@ const handle = (props) => {
   const { value, dragging, index, ...restProps } = props;
   return (
     <Tooltip
-      prefixCls="rc-slider-tooltip"
+      prefixCls="rc-slider-enhanced-tooltip"
       overlay={value}
       visible={true}
       placement="top"
