@@ -51,7 +51,7 @@ npm install --save rc-slider
 ````js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slider, { Range } from 'rc-slider';
+import Slider, { Range } from 'rc-slider-enhanced';
 // We can just import Slider or Range to reduce bundle size
 // import Slider from 'rc-slider/lib/Slider';
 // import Range from 'rc-slider/lib/Range';
@@ -73,7 +73,7 @@ ReactDOM.render(
 An extension to make Slider or Range support Tooltip on handle.
 
 ```jsx
-const Slider = require('rc-slider');
+const Slider = require('rc-slider-enhanced');
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 ```

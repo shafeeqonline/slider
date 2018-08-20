@@ -45,7 +45,7 @@ export default function createSlider(Component) {
 
     static defaultProps = {
       ...Component.defaultProps,
-      prefixCls: 'rc-slider',
+      prefixCls: 'rc-slider-enhanced',
       className: '',
       min: 0,
       max: 100,

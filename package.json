@@ -1,7 +1,7 @@
 {
-  "name": "rc-slider",
-  "version": "8.6.1",
-  "description": "Slider UI component for React",
+  "name": "rc-slider-enhanced",
+  "version": "0.0.3",
+  "description": "Forked Slider UI component for React",
   "keywords": [
     "react",
     "react-component",
@@ -31,7 +31,7 @@
   "config": {
     "port": 8005,
     "entry": {
-      "rc-slider": [
+      "rc-slider-enhanced": [
         "./assets/index.less",
         "./src/index.js"
       ]
