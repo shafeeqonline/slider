@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, {Fragment} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import warning from 'warning';
 import Track from './common/Track';
@@ -175,7 +175,7 @@ class Slider extends React.Component {
 
     const _trackStyle = trackStyle[0] || trackStyle;
     const track = (
-      <Fragment>
+      <div>
         <Track
           className={`${prefixCls}-track`}
           vertical={vertical}
@@ -190,7 +190,7 @@ class Slider extends React.Component {
           }}
         />
         {initialOffset && 
-        <Fragment>
+        <div>
         <span className="initial-value-toolTip" style={{...initialToolTipStyles, display: value !== initialValue ? "inline" : "none" ,right: `${100 - initialOffset}%` }}>{initialValue}</span>
         <Track
           className={`${prefixCls}-track`}
@@ -204,8 +204,8 @@ class Slider extends React.Component {
             ..._trackStyle,
             ...((value >= initialValue) ? initialTrackStyle : {zIndex: 1})
           }}
-        /></Fragment>}
-      </Fragment>
+        /></div>}
+      </div>
     );
 
     return { tracks: track, handles: handle };
