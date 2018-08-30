@@ -1,26 +1,26 @@
 webpackJsonp([4],{
 
-/***/ 172:
+/***/ 175:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(173);
+module.exports = __webpack_require__(176);
 
 
 /***/ }),
 
-/***/ 173:
+/***/ 176:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rc_slider_assets_index_less__ = __webpack_require__(24);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rc_slider_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rc_slider_assets_index_less__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rc_slider_enhanced_assets_index_less__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rc_slider_enhanced_assets_index_less___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rc_slider_enhanced_assets_index_less__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rc_slider__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rc_slider___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rc_slider__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced__);
 
 
 
@@ -65,7 +65,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Slider with marks, `step=null`'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a, { min: -10, marks: marks, step: null, onChange: log, defaultValue: 20 })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a, { min: -10, marks: marks, step: null, onChange: log, defaultValue: 20 })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
@@ -75,7 +75,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Slider with marks and steps'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a, { dots: true, min: -10, marks: marks, step: 10, onChange: log, defaultValue: 20 })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a, { dots: true, min: -10, marks: marks, step: 10, onChange: log, defaultValue: 20 })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
@@ -85,7 +85,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Slider with marks, `included=false`'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a, { min: -10, marks: marks, included: false, defaultValue: 20 })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a, { min: -10, marks: marks, included: false, defaultValue: 20 })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
@@ -95,7 +95,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Slider with marks and steps, `included=false`'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a, { min: -10, marks: marks, step: 10, included: false, defaultValue: 20 })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a, { min: -10, marks: marks, step: 10, included: false, defaultValue: 20 })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
@@ -105,7 +105,7 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Range with marks'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a.Range, { min: -10, marks: marks, onChange: log, defaultValue: [20, 25, 30, 40] })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a.Range, { min: -10, marks: marks, onChange: log, defaultValue: [20, 25, 30, 40] })
   ),
   __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(
     'div',
@@ -115,11 +115,11 @@ __WEBPACK_IMPORTED_MODULE_2_react_dom___default.a.render(__WEBPACK_IMPORTED_MODU
       null,
       'Range with marks and steps'
     ),
-    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider___default.a.Range, { min: -10, marks: marks, step: 10, onChange: log, defaultValue: [20, 40] })
+    __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_rc_slider_enhanced___default.a.Range, { min: -10, marks: marks, step: 10, onChange: log, defaultValue: [20, 40] })
   )
 ), document.getElementById('__react-content'));
 
 /***/ })
 
-},[172]);
+},[175]);
 //# sourceMappingURL=marks.js.map
